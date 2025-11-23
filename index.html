@@ -54,6 +54,21 @@
             font-weight: bold;
             text-shadow: 1px 1px #fff;
         }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+            background-color: #ff85c0;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff5ea1;
+        }
     </style>
 </head>
 
@@ -83,19 +98,20 @@
         </div>
 
         <div class="sweet-text">
-             dünya senin sayende dönüyor 💖🌍✨
+            süredir dünya senin sayende dönüyor 💖🌍✨
         </div>
     </div>
 
-    <!-- Şarkı -->
-    <audio autoplay loop>
-    <source src="tears.mp3" type="audio/mpeg">
-    
-</audio>
+    <!-- Müzik -->
+    <audio id="music" loop>
+      <source src="https://raw.githubusercontent.com/Leihtren/dogumgunu-gulsah/f579a4aff88f33ad76c9fb475738e210d6d7fd80/tears.mp3.mp3" type="audio/mpeg">
+    </audio>
 
+    <!-- Çal Butonu -->
+    <button onclick="document.getElementById('music').play()">🎵 Müziği Çal</button>
 
     <script>
-        // DOĞUM TARİHİ BURAYA
+        // DOĞUM TARİHİ
         const birthDate = new Date("1997-11-24T00:00:00");
 
         function updateCounter() {
@@ -139,8 +155,3 @@
 
 </body>
 </html>
-
-
-
-
-
